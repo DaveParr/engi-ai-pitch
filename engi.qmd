@@ -1,7 +1,95 @@
 ---
-title: "quarto"
+title: "ENGI.AI"
+subtitle: "Solving AI for the energy market"
+format: revealjs
 ---
 
-## Quarto
+# The energy market has a data science problem
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## Forecasting is the goal
+
+- Forecasting is the most common data science objective in the energy market
+- Forecasting is the process of taking prior information and using it to make predictions about the future before it happens
+  - according to 95% of data scientists in the industry
+
+## Enables
+
+- Sophisticated demand side response to help support load balancing.
+  - Solves peak power carbon intensity
+- Smart storage control algorithms to improve utilisation of renewable energy.
+  - Solves virtual power plants
+- Smart meters to reduce costs through dynamic prices or improve energy efficiency.
+  - Big Turn down
+- Electric vehicles enabled with two-way communications to provide distributed control and reduce network strain.
+  - Third Industrial Revolution power supply
+
+## Data access is not the challenge
+
+- Over 50% of the buildings in the UK have smart meters
+  - According to BEIS
+- Octopus customers have first class integrations to their smart meter
+- Industry standard data aggregators and D10 flow
+
+## Hiring is
+
+- Very difficult to hire data scientists
+  - Expensive to hire
+    - Base salary of 50,000 per head
+  - Hard to find with correct skills
+
+# Existing non-solutions
+
+## EPC/SAP
+
+- Government mandated Excel Calculator
+- Requires survey or desktop study
+- Only gives a usage range oer year
+
+## Building design simulation
+
+- EnergyPlus and AutoDesk
+- Whole building physics simulation
+- Highly specialised and technical
+- Not scaleable as each building needs it's own model
+- Difficult/illegal to integrate into other software
+- Intended primarily for architecture/engineering work
+
+## In-House Excel
+
+- Painful to build, worse to maintain
+- Time to calculate a sheet can be over 45 minutes for advanced models
+- Doesn't scale without more hiring to 'drive' the sheets
+
+## Custom service
+
+- Re-invent a wheel internally is expensive, complicated + time consuming
+- Need a team of Data Scientists
+  - If you've found people with the right skills, they probably came from a place that's already done this
+  - If you haven't found people with the right skills, they have a huge amount to learn
+- So you either reinvent a solution, or take years to upskill enough to find it
+
+# The ENGI.AI solution
+
+- Best practice techniques
+- AI doesn't need a description of the building
+  - So no surveys
+- Integrable and developer friendly
+
+# Who am I
+- 10 years building analytics software and data science services
+- 8 years in energy efficiency and management market
+- 2 years leading software and product development 
+
+# Traction and Revenue
+
+# Ask
+
+# Appendix
+
+## References
+
+- Energy Catapult report
+- Gaurdian report
+- BEIS report
+
+## History of flexibility in the energy market
