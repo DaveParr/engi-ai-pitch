@@ -3,92 +3,160 @@ title: "ENGI.AI"
 subtitle: "Solving AI for the energy market"
 format:
   revealjs: 
-    theme: [dark, custom.scss]
+    theme: [custom.scss]
     logo: logo.png
     title-slide-attributes:
-      data-background-image: gradient_1-AGBjrE8Wxpc68qqN.svg
+        data-background-image: gradient2-A1aNg8Lg5NTlR0e3.svg
 ---
 
 # The energy market has a data science problem
 
-## Forecasting is the main goal 
 
-- Forecasting is the most common data science objective in the [energy market](tesst)
-  - according to 95% of data scientists in the industry
-- Forecasting is the process of taking prior information and using it to make predictions about the future before it happens
+## Everyone needs forecasts
+
+::: columns
+::: {.column width="40%"}
+::: {.r-fit-text}
+> "Forecasting using Time Series is the most common technique used in Data Science departments for companies in the Energy Market" - **Energy Systems Catapult Report**
+:::
+:::
+
+::: {.column width="60%"}
+![](3308891-200.png){fig-align="center" width="80%"}
+:::
+:::
+
+::: notes
+-   Forecasting is the most common data science objective
+    -   according to 95% of data scientists in the industry
+-   Forecasting future energy demand, and the associated cost or supplying it.
+:::
 
 ## Data access is not the challenge
 
-- Over 50% of the buildings in the UK have smart meters
-  - According to BEIS
-- Octopus customers have first class integrations to their smart meter
-- Industry standard data aggregators and D10 flow
+::: columns
+::: {.column width="40%"}
+> "The majority of buildings in the UK have a smart meter" - **BEIS/ONS?**
+:::
 
-## Hiring is
+::: {.column width="60%"}
+![](3308891-200.png){.r-stretch}
+:::
+:::
 
-- Very difficult to hire data scientists
-  - Expensive to hire
-    - Base salary of 50,000 per head 
-      - https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn
-  - Hard to find with correct skills
+::: notes
+-   Over 50% of the buildings in the UK have smart meters
+    -   According to BEIS
+-   Octopus customers have first class integrations to their smart meter
+-   Industry standard data aggregators and D10 flow
+:::
+
+## Rebuilding expensive wheels is the problem
+
+> 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - **Energy Systems Catapult Report**
+
+\begin{gather*}
+cost = (salary * members) + compute + dev time\\
+cost = (50000 * [5-9]) + ? + ?
+\end{gather*}
+
+::: notes
+-   Very difficult to hire data scientists
+    -   Expensive to hire
+        -   Base salary of 50,000 per head
+            -   https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn
+    -   Hard to find with correct skills
+        -   Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
+        -   Important to have Energy Market domain skills AND general software development skills in addition to Data Science Experience
+:::
+
 
 # Existing non-solutions
 
 ## EPC/SAP
 
-- Government mandated Excel Calculator
-- Requires survey or desktop study
-- Only gives a usage range over year
+![](/example-epc.png)
+
+-   Complex 
+
+::: notes
+-   Government mandated Excel Calculator
+-   Requires survey or desktop study
+-   Only gives a usage range over year
+:::
+
 
 ## Building simulation
 
-- EnergyPlus and AutoDesk
-- Whole building physics simulation
-- Highly specialised and technical
-- Not scaleable as each building needs it's own model
-- Difficult/illegal to integrate into other software
-- Intended primarily for architecture/engineering work
+::: columns
+::: {.column width="50%"}
+![](/autodesk.svg){width="100%"}
+![](/Energyplus.gif){width="70%"}
+:::
+::: {.column width="50%"}
+-  requires specialists to both survey and then operate
+   -  hard to build
+-  requires a different model and survey per building
+   -  can't scale at all
+:::
+:::
+
+::: notes
+-   EnergyPlus and AutoDesk
+-   Whole building physics simulation
+-   Highly specialised and technical
+-   Not scaleable as each building needs it's own model
+-   Difficult/illegal to integrate into other software
+-   Intended primarily for architecture/engineering work
+:::
 
 ## In-House Excel
 
-- Painful to build, worse to maintain
-- Time to calculate a sheet can be over 45 minutes for advanced models
-- Doesn't scale without more hiring to 'drive' the sheets
+::: notes
+-   Painful to build, worse to maintain
+-   Time to calculate a sheet can be over 45 minutes for advanced models
+-   Doesn't scale without more hiring to 'drive' the sheets
+:::
 
-## Custom service
+## In-House Software Development
 
-- Re-invent a wheel internally is expensive, complicated + time consuming
-- Need a team of Data Scientists
-  - If you've found people with the right skills, they probably came from a place that's already done this
-  - If you haven't found people with the right skills, they have a huge amount to learn
-- So you either reinvent a solution, or take years to upskill enough to find it
+::: notes
+-   Re-invent a common wheel internally is expensive, complicated + time consuming
+:::
 
 # The ENGI.AI solution
 
-- Energy forecasting as a service
-  - Plug and play into your existing software
-- Best practice techniques
-- AI doesn't need a description of the building
-  - So no surveys
-- Designed to be integrated
-- Developer friendly
+::: notes
+-   Energy forecasting as a service
+    -   Plug and play into your existing software
+-   Best practice techniques
+-   AI doesn't need a description of the building
+    -   So no surveys
+-   Designed to be integrated
+-   Developer friendly
+:::
 
+## Enables Diverse Energy Benefits+
 
-## Enables
-
-- Sophisticated demand side response to help support load balancing.
-  - Solves peak power carbon intensity
-- Smart storage control algorithms to improve utilisation of renewable energy.
-  - Solves virtual power plants
-- Smart meters to reduce costs through dynamic prices or improve energy efficiency.
-  - Big Turn down
-- Electric vehicles enabled with two-way communications to provide distributed control and reduce network strain.
-  - Third Industrial Revolution power supply
+::: notes
+-   Sophisticated demand side response to help support load balancing.
+    -   Solves peak power carbon intensity
+-   Smart storage control algorithms to improve utilisation of renewable energy.
+    -   Solves virtual power plants
+-   Smart meters to reduce costs through dynamic prices or improve energy efficiency.
+    -   Big Turn down
+-   Electric vehicles enabled with two-way communications to provide distributed control and reduce network strain.
+    -   Third Industrial Revolution power supply
+:::
 
 # Who am I
-- 10 years building analytics software and data science services
-- 8 years in energy efficiency and management market
-- 2 years leading software and product development 
+
+::: notes
+-   10 years building analytics software and data science services
+-   8 years in energy efficiency and management market
+-   2 years leading software and product development
+:::
+
 
 # Traction and Revenue
 
@@ -98,14 +166,14 @@ format:
 
 ## References
 
-- Energy Catapult report
-- Guardian report
-- BEIS report
+-   Energy Catapult report
+-   Guardian report
+-   BEIS report
 
 ## History of flexibility in the energy market
 
 ## It's X but for Y
 
-- It's stripe but for energy analytics dashboards
-- It's sendgrid but for intelligent batteries
-- It's auth0 but for virtual power plants
+-   It's stripe but for energy analytics dashboards
+-   It's sendgrid but for intelligent batteries
+-   It's auth0 but for virtual power plants
