@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: "Montserrat", serif !default;
+
+// colors
+$link-color: #D9E035 !default;
+
+// headings
+$presentation-heading-font: "Rubik Mono One","Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$presentation-heading-color: #E03584 !default;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}

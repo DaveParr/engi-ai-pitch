@@ -1,27 +1,21 @@
 ---
 title: "ENGI.AI"
 subtitle: "Solving AI for the energy market"
-format: revealjs
+format:
+  revealjs: 
+    theme: [dark, custom.scss]
+    logo: logo.png
+    title-slide-attributes:
+      data-background-image: gradient_1-AGBjrE8Wxpc68qqN.svg
 ---
 
 # The energy market has a data science problem
 
-## Forecasting is the goal
+## Forecasting is the main goal 
 
-- Forecasting is the most common data science objective in the energy market
-- Forecasting is the process of taking prior information and using it to make predictions about the future before it happens
+- Forecasting is the most common data science objective in the [energy market](tesst)
   - according to 95% of data scientists in the industry
-
-## Enables
-
-- Sophisticated demand side response to help support load balancing.
-  - Solves peak power carbon intensity
-- Smart storage control algorithms to improve utilisation of renewable energy.
-  - Solves virtual power plants
-- Smart meters to reduce costs through dynamic prices or improve energy efficiency.
-  - Big Turn down
-- Electric vehicles enabled with two-way communications to provide distributed control and reduce network strain.
-  - Third Industrial Revolution power supply
+- Forecasting is the process of taking prior information and using it to make predictions about the future before it happens
 
 ## Data access is not the challenge
 
@@ -34,7 +28,8 @@ format: revealjs
 
 - Very difficult to hire data scientists
   - Expensive to hire
-    - Base salary of 50,000 per head
+    - Base salary of 50,000 per head 
+      - https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn
   - Hard to find with correct skills
 
 # Existing non-solutions
@@ -43,9 +38,9 @@ format: revealjs
 
 - Government mandated Excel Calculator
 - Requires survey or desktop study
-- Only gives a usage range oer year
+- Only gives a usage range over year
 
-## Building design simulation
+## Building simulation
 
 - EnergyPlus and AutoDesk
 - Whole building physics simulation
@@ -70,10 +65,25 @@ format: revealjs
 
 # The ENGI.AI solution
 
+- Energy forecasting as a service
+  - Plug and play into your existing software
 - Best practice techniques
 - AI doesn't need a description of the building
   - So no surveys
-- Integrable and developer friendly
+- Designed to be integrated
+- Developer friendly
+
+
+## Enables
+
+- Sophisticated demand side response to help support load balancing.
+  - Solves peak power carbon intensity
+- Smart storage control algorithms to improve utilisation of renewable energy.
+  - Solves virtual power plants
+- Smart meters to reduce costs through dynamic prices or improve energy efficiency.
+  - Big Turn down
+- Electric vehicles enabled with two-way communications to provide distributed control and reduce network strain.
+  - Third Industrial Revolution power supply
 
 # Who am I
 - 10 years building analytics software and data science services
@@ -89,7 +99,13 @@ format: revealjs
 ## References
 
 - Energy Catapult report
-- Gaurdian report
+- Guardian report
 - BEIS report
 
 ## History of flexibility in the energy market
+
+## It's X but for Y
+
+- It's stripe but for energy analytics dashboards
+- It's sendgrid but for intelligent batteries
+- It's auth0 but for virtual power plants
