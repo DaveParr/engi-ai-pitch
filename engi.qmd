@@ -50,8 +50,17 @@ format:
 :::
 
 ## Rebuilding expensive wheels is the problem
+::: columns
 
+::: {.column width="40%"}
 > 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - **Energy Systems Catapult Report**
+:::
+
+::: {.column width="60%"}
+![](/static/icons/Data_Science_VD.png){fig-align="center"}
+:::
+
+:::
 
 ::: notes
 -   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but there are a lot of you
