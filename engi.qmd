@@ -1,28 +1,26 @@
 ---
 title: "ENGI.AI"
-subtitle: "Solving AI for the energy market"
 format:
   revealjs: 
-    theme: [custom.scss]
-    logo: logo.png
+    theme: [static/styles/custom.scss]
+    logo: static/icons/logo.png
     title-slide-attributes:
-        data-background-image: gradient2-A1aNg8Lg5NTlR0e3.svg
+        data-background-image: static/images/gradient2-A1aNg8Lg5NTlR0e3.svg
 ---
 
 # The energy market has a data science problem
-
 
 ## Everyone needs forecasts
 
 ::: columns
 ::: {.column width="40%"}
-::: {.r-fit-text}
+::: r-fit-text
 > "Forecasting using Time Series is the most common technique used in Data Science departments for companies in the Energy Market" - **Energy Systems Catapult Report**
 :::
 :::
 
 ::: {.column width="60%"}
-![](3308891-200.png){fig-align="center" width="80%"}
+![](static/icons/3308891-200.png){fig-align="center" width="80%"}
 :::
 :::
 
@@ -40,7 +38,7 @@ format:
 :::
 
 ::: {.column width="60%"}
-![](3308891-200.png){.r-stretch}
+![](static/icons/data.png){.r-stretch}
 :::
 :::
 
@@ -55,49 +53,44 @@ format:
 
 > 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - **Energy Systems Catapult Report**
 
-\begin{gather*}
-cost = (salary * members) + compute + dev time\\
-cost = (50000 * [5-9]) + ? + ?
-\end{gather*}
-
 ::: notes
--   Very difficult to hire data scientists
-    -   Expensive to hire
-        -   Base salary of 50,000 per head
-            -   https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn
+-   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but there are a lot of you
     -   Hard to find with correct skills
         -   Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
         -   Important to have Energy Market domain skills AND general software development skills in addition to Data Science Experience
+    -   Expensive to hire
+        -   Base salary of 50,000 per head
 :::
-
 
 # Existing non-solutions
 
 ## EPC/SAP
 
-![](/example-epc.png)
+![](static/images/example-epc.png)
 
--   Complex 
+-   Very simple output
+-   Very old information
 
 ::: notes
 -   Government mandated Excel Calculator
--   Requires survey or desktop study
+-   Requires survey or desktop study by a professional
 -   Only gives a usage range over year
+-   Surveys only need to be re-done in specific purchases or changes of use
+    -   Might be up to 10 years
 :::
-
 
 ## Building simulation
 
 ::: columns
 ::: {.column width="50%"}
-![](/autodesk.svg){width="100%"}
-![](/Energyplus.gif){width="70%"}
+![](static/icons/autodesk.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
 :::
+
 ::: {.column width="50%"}
--  requires specialists to both survey and then operate
-   -  hard to build
--  requires a different model and survey per building
-   -  can't scale at all
+-   requires specialists to both survey and then operate
+    -   hard to build
+-   requires a different model and survey per building
+    -   can't scale at all
 :::
 :::
 
@@ -110,21 +103,62 @@ cost = (50000 * [5-9]) + ? + ?
 -   Intended primarily for architecture/engineering work
 :::
 
-## In-House Excel
+## Custom Excel
+
+::: columns
+::: {.column width="40%"}
+-   Sheets are fragile
+-   Import and export adds friction
+-   Scale limited by available staff
+-   Impossible to use the best techniques
+:::
+
+::: {.column width="60%"}
+![](/static/icons/Microsoft_Excel_2013-2019_logo.png)
+:::
+:::
 
 ::: notes
 -   Painful to build, worse to maintain
--   Time to calculate a sheet can be over 45 minutes for advanced models
+-   Small breakages can go un-noticed for a long time
+-   Time to calculate a sheet can be nearly hours for 'advanced' models
+    -   Still not actually that effective
 -   Doesn't scale without more hiring to 'drive' the sheets
 :::
 
 ## In-House Software Development
 
+![](/static/icons/Data_Science_VD.png){fig-align="center"}
+
+```{=tex}
+\begin{gather*}
+cost = (salary * members) + OPEX + lost\: earning\\
+cost = (50000 * [5-9]) + ?
+\end{gather*}
+```
+
 ::: notes
--   Re-invent a common wheel internally is expensive, complicated + time consuming
+-   Need to hire multiple data scientists
+    -   with the RIGHT domain knowledge
+-   and maybe normal software developers too
+-   and then design, build, deploy and maintain
 :::
 
-# The ENGI.AI solution
+# The solution
+
+## What is needed?
+
+::: notes
+-   Not reliant on surveys
+-   Up to date with the building
+-   Informed by domain knowledge
+-   Scales better than 
+    -   a simulation per building
+    -   an excel sheet per employee
+    -   a data science team per company
+:::
+
+## ENGI.AI
 
 ::: notes
 -   Energy forecasting as a service
@@ -133,6 +167,9 @@ cost = (50000 * [5-9]) + ? + ?
 -   AI doesn't need a description of the building
     -   So no surveys
 -   Designed to be integrated
+    -   Apps 
+    -   IoT/BMS
+    -   Network mechanisms
 -   Developer friendly
 :::
 
@@ -157,7 +194,6 @@ cost = (50000 * [5-9]) + ? + ?
 -   2 years leading software and product development
 :::
 
-
 # Traction and Revenue
 
 # Ask
@@ -166,9 +202,10 @@ cost = (50000 * [5-9]) + ? + ?
 
 ## References
 
--   Energy Catapult report
--   Guardian report
--   BEIS report
+-   [Energy Systems Catapult - Data Science Skills in the Energy Sector](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
+-   [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
+-   [THE DATA SCIENCE VENN DIAGRAM - Drew Conway](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
+-   [UK Data Science Salary - Glassdoor.com](https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn)
 
 ## History of flexibility in the energy market
 
