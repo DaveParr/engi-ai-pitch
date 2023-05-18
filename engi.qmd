@@ -6,21 +6,20 @@ format:
     logo: static/icons/logo.png
     title-slide-attributes:
         data-background-image: static/images/gradient2-A1aNg8Lg5NTlR0e3.svg
+filters:
+   - roughnotation
 ---
 
-# The energy market has a data science problem
+# The Energy Market has a Data Science Problem
 
-## Everyone needs forecasts
-
-::: columns
-::: {.column width="40%"}
-::: r-fit-text
-> "Forecasting using Time Series is the most common technique used in Data Science departments for companies in the Energy Market" - **Energy Systems Catapult Report**
-:::
+## Forecasting is the goal
+::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
+> "Forecasting using Time Series is the most common data science technique" - Energy Systems Catapult
 :::
 
-::: {.column width="60%"}
-![](static/icons/3308891-200.png){fig-align="center" width="80%"}
+::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
+![](static/icons/3308891-200.png)
 :::
 :::
 
@@ -32,13 +31,13 @@ format:
 
 ## Data access is not the challenge
 
-::: columns
-::: {.column width="40%"}
-> "The majority of buildings in the UK have a smart meter" - **BEIS/ONS?**
+::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
+> "The majority of buildings in the UK have a smart meter" - *BEIS*
 :::
 
-::: {.column width="60%"}
-![](static/icons/data.png){.r-stretch}
+::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
+![](static/icons/data.png)
 :::
 :::
 
@@ -49,26 +48,23 @@ format:
 -   Industry standard data aggregators and D10 flow
 :::
 
-## Rebuilding expensive wheels is the problem
-::: columns
+## Demand for skills \> Supply
 
-::: {.column width="40%"}
-> 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - **Energy Systems Catapult Report**
+::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
+> 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - *Energy Systems Catapult*
 :::
 
-::: {.column width="60%"}
+::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
 ![](/static/icons/Data_Science_VD.png){fig-align="center"}
 :::
-
 :::
 
 ::: notes
--   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but there are a lot of you
+-   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but we are pretty out-numbered
     -   Hard to find with correct skills
         -   Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
         -   Important to have Energy Market domain skills AND general software development skills in addition to Data Science Experience
-    -   Expensive to hire
-        -   Base salary of 50,000 per head
 :::
 
 # Existing non-solutions
@@ -90,12 +86,12 @@ format:
 
 ## Building simulation
 
-::: columns
-::: {.column width="50%"}
+::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
 ![](static/icons/autodesk.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
 -   requires specialists to both survey and then operate
     -   hard to build
 -   requires a different model and survey per building
@@ -104,30 +100,32 @@ format:
 :::
 
 ::: notes
--   EnergyPlus and AutoDesk
--   Whole building physics simulation
--   Highly specialised and technical
--   Not scaleable as each building needs it's own model
--   Difficult/illegal to integrate into other software
+-   EnergyPlus and AutoDesk are the main suppliers
+-   Whole building physics simulation software
+-   Highly specialised and technical, with expensive licenses
+-   Again this is not scaleable as each building needs it's own model
+-   Difficult/illegal to integrate into other software to resell
 -   Intended primarily for architecture/engineering work
 :::
 
 ## Custom Excel
 
-::: columns
-::: {.column width="40%"}
+::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
 -   Sheets are fragile
 -   Import and export adds friction
 -   Scale limited by available staff
 -   Impossible to use the best techniques
 :::
 
-::: {.column width="60%"}
+::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
 ![](/static/icons/Microsoft_Excel_2013-2019_logo.png)
 :::
 :::
 
 ::: notes
+-   Seems to be popular still
+    -   Followed by R, and beaten by 2x by Python
 -   Painful to build, worse to maintain
 -   Small breakages can go un-noticed for a long time
 -   Time to calculate a sheet can be nearly hours for 'advanced' models
@@ -145,7 +143,6 @@ cost = (salary * members) + OPEX + lost\: earning\\
 cost = (50000 * [5-9]) + ?
 \end{gather*}
 ```
-
 ::: notes
 -   Need to hire multiple data scientists
     -   with the RIGHT domain knowledge
@@ -153,36 +150,111 @@ cost = (50000 * [5-9]) + ?
 -   and then design, build, deploy and maintain
 :::
 
-# The solution
+# ENGI.AI
 
-## What is needed?
+## A good solution
+
+::: columns
+::: {.column width="25%"}
+Removes surveys
+
+::: r-stack
+![](/static/icons/survey.png)
+
+![](/static/icons/cross.png){.fragment}
+:::
+:::
+
+::: {.column width="25%"}
+Stays up to date
+
+::: r-stack
+![](static/icons/calendar.png)
+
+![](static/icons/cross.png){.fragment}
+:::
+:::
+
+::: {.column width="25%"}
+Scales with demand
+
+::: r-stack
+![](static/icons/stack.png)
+
+![](static/icons/tick.png){.fragment}
+:::
+:::
+
+::: {.column width="25%"}
+Modern Accuracy
+
+::: r-stack
+![](static/icons/machine-learning.png)
+
+![](static/icons/tick.png){.fragment}
+:::
+:::
+:::
 
 ::: notes
 -   Not reliant on surveys
 -   Up to date with the building
 -   Informed by domain knowledge
--   Scales better than 
+-   Scales better than
     -   a simulation per building
     -   an excel sheet per employee
     -   a data science team per company
 :::
 
-## ENGI.AI
+## ENGI.AI {auto-animate=true}
 
-::: notes
--   Energy forecasting as a service
-    -   Plug and play into your existing software
--   Best practice techniques
--   AI doesn't need a description of the building
-    -   So no surveys
--   Designed to be integrated
-    -   Apps 
-    -   IoT/BMS
-    -   Network mechanisms
--   Developer friendly
+**Forecast the energy use of a building with machine learning that integrates into your software**
+
+## ENGI.AI {auto-animate=true}
+
+![](static/images/prediction.avif)
+
+
+**Forecast the energy use of a building with machine learning that integrates into your software**
+
+## ENGI.AI {auto-animate=true}
+::: {.columns style="display: flex !important; height: 40%;"}
+
+::: {.column width="66%"}
+![](static/images/prediction.avif)
 :::
 
-## Enables Diverse Energy Benefits+
+::: {.column width="33%"}
+**Forecast the energy use of a building with machine learning that integrates into your software**
+:::
+:::
+
+::: {.columns }
+::: {.column width="33%"}
+![](static/icons/app.png){.fragment}
+:::
+::: {.column width="33%"}
+![](static/icons/api.png){.fragment}
+:::
+::: {.column width="33%"}
+![](static/icons/iot.png){.fragment}
+:::
+:::
+
+
+::: notes 
+- Energy forecasting as a service 
+  - Plug and play into your existing software 
+- AI doesn't need a description of the building 
+  - Uses the most current Machine Learning tools and techniques 
+  - Learns from the buildings smart meter data 
+- Designed to be integrated 
+    - Apps 
+    - IoT/BMS 
+    - Network mechanisms 
+:::
+
+## Enables Diverse Energy Benefits
 
 ::: notes
 -   Sophisticated demand side response to help support load balancing.
@@ -195,7 +267,23 @@ cost = (50000 * [5-9]) + ?
     -   Third Industrial Revolution power supply
 :::
 
-# Who am I
+# Where is ENGI.AI now?
+
+## Who am I
+
+::: columns
+::: {.column width="33%"}
+![Environmental Building Science MSc](static/icons/approve.png)
+:::
+
+::: {.column width="33%"}
+![10 years developing data science software](static/icons/coding.png)
+:::
+
+::: {.column width="33%"}
+![2 years leading product development](static/icons/leading.png)
+:::
+:::
 
 ::: notes
 -   10 years building analytics software and data science services
@@ -203,9 +291,26 @@ cost = (50000 * [5-9]) + ?
 -   2 years leading software and product development
 :::
 
-# Traction and Revenue
+## Traction + Status
 
-# Ask
+-   Running MVP
+-   Release to pre-alpha users
+-   Growing waitlist for alpha release
+
+## Revenue Model
+
+-   Monthly subscription
+    -   Domestic
+    -   Per building
+-   Per prediction
+    -   Commercial software
+-   Per device license
+    -   IoT
+    -   Edge
+
+## Ask
+
+-   Building a team
 
 # Appendix
 

@@ -4,15 +4,12 @@
 $font-family-sans-serif: "Montserrat", serif !default;
 
 // colors
-$link-color: #D9E035 !default;
+$colour-pink: #E03584;
+$colour-green: #D9E035;
+$colour-purple: #7634BF;
+
+$link-color: $colour-green !default;
 
 // headings
-$presentation-heading-font: "Rubik Mono One","Palatino Linotype", "Book Antiqua", Palatino,
-  FreeSerif, serif !default;
-$presentation-heading-color: #E03584 !default;
-
-/*-- scss:rules --*/
-
-.reveal a {
-  line-height: 1.3em;
-}
+$presentation-heading-font: "Rubik Mono One", !default;
+$presentation-heading-color: $colour-pink !default;
