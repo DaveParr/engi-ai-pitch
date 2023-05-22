@@ -2,7 +2,7 @@
 title: "ENGI.AI"
 format:
   revealjs: 
-    theme: [static/styles/custom.scss]
+    theme: [dark, static/styles/custom.scss]
     logo: static/icons/logo.png
     title-slide-attributes:
         data-background-image: static/images/gradient2-A1aNg8Lg5NTlR0e3.svg
