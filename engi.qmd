@@ -6,10 +6,6 @@ format:
     logo: static/icons/logo.png
     title-slide-attributes:
         data-background-image: static/images/gradient2-A1aNg8Lg5NTlR0e3.svg
-    # parallax-background-image: static/images/gradient_1-AGBjrE8Wxpc68qqN.svg
-    # parallax-background-size: "2100px 900px"
-    # parallax-background-horizontal: 200
-    # parallax-background-vertical: 50
 ---
 
 # The Energy Market has a Data Science Problem
@@ -20,7 +16,7 @@ format:
 -   The energy market has a data science problem.
 :::
 
-## Forecasting is the goal
+## Forecasting is the goal {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -44,7 +40,7 @@ format:
 -   All of these are reliant on, or can be enhanced by, good forecasting
 :::
 
-## Data access is not the challenge
+## Data access is not the challenge {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -66,7 +62,7 @@ format:
 -   Industry standard data aggregators and the D10 flow also help the data access landscape
 :::
 
-## Demand for skills \> Supply of people
+## Demand for skills \> Supply of people {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -97,7 +93,7 @@ format:
         -   Accessibility
 :::
 
-## EPC/SAP
+## EPC/SAP {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ![](static/images/example-epc.png)
 
@@ -115,7 +111,7 @@ format:
     -   Might be up to 10 years
 :::
 
-## Building simulation
+## Building simulation {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -141,7 +137,7 @@ format:
     -   Depending on use and license
 :::
 
-## Custom Excel
+## Custom Excel {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -169,7 +165,7 @@ format:
 -   Doesn't scale without hiring more staff to 'drive' more Excel workbooks per day
 :::
 
-## In-House Software Development
+## In-House Software Development {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ![](/static/icons/Data_Science_VD.png){fig-align="center"}
 
@@ -196,7 +192,7 @@ cost = (50000 * [5-9]) + ? + ?
 
 # ENGI.AI
 
-## A good solution
+## A good solution {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: columns
 ::: {.column width="25%"}
@@ -251,13 +247,13 @@ Scales with demand
     -   a data science team per company
 :::
 
-## ENGI.AI {auto-animate="true"}
+## ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
 ::: {style="color: #D9E035;"}
 **Artificial Intelligence as a Service for the Energy Market**
 :::
 
-## ENGI.AI {auto-animate="true"}
+## ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
 ![](static/images/prediction.avif)
 
@@ -265,7 +261,7 @@ Scales with demand
 **Artificial Intelligence as a Service for the Energy Market**
 :::
 
-## ENGI.AI {auto-animate="true"}
+## ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
 ::: {.columns style="display: flex !important; height: 40%;"}
 ::: {.column width="66%"}
@@ -305,7 +301,7 @@ Scales with demand
     -   Network mechanisms
 :::
 
-## Enables Net Zero Solutions
+## Enables Net Zero Innovation {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: columns
 ::: {.column width="25%"}
@@ -347,7 +343,7 @@ Electric Vehicle Charging Control
     -   Because the climate crisis isn't waiting for anyone
 :::
 
-## Potential Revenue Models
+## Potential Revenue Models {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 -   Monthly subscription
     -   Domestic
@@ -364,7 +360,7 @@ Electric Vehicle Charging Control
 
 # Where is ENGI.AI now?
 
-## Traction + Status
+## Traction + Status {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 -   Dec -\> Feb: Tramshed Tech Start up Academy
 -   Mar: Live demo launched using real data and real AI
@@ -383,7 +379,7 @@ Electric Vehicle Charging Control
     -   Progressing over June into a more general release
 :::
 
-## Who am I
+## Who am I {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: columns
 ::: {.column width="33%"}
@@ -408,7 +404,7 @@ Electric Vehicle Charging Control
 -   And now I'm building ENGI.AI
 :::
 
-## Ask
+## Ask {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 -   Energy sector contacts
     -   Users
@@ -422,7 +418,7 @@ Electric Vehicle Charging Control
 -   It's been a fun trip so far, but to make it successful I know I can't do it alone.
 :::
 
-## Contact
+# Contact {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
 -   [www.engi.ai](https://engi.ai)
 -   [LinkedIn/engi-ai](https://www.linkedin.com/company/engi-ai)
@@ -434,7 +430,7 @@ Electric Vehicle Charging Control
 -   Here's a lot of information on where to find me in one slide.
 :::
 
-# Sources
+## Sources
 
 -   [Energy Systems Catapult - Data Science Skills in the Energy Sector](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
 -   [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
