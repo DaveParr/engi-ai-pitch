@@ -119,7 +119,7 @@ format:
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](static/icons/parent-logo-white.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
+![](static/icons/autodesk.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
 :::
 
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -426,9 +426,9 @@ Electric Vehicle Charging Control
     -   People interested in being part of building ENGI.AI
 
 ::: notes
--   And so my ask for you folks is contacts and referrals
+-   And so my ask for you folks is a mention in the right place
 -   If over the last 10 minutes you've joined me in seeing the value of a product like this, keep ENGI.AI in mind when you're talking to people in the energy sector
--   It's been a fun trip so far, but to make it successful I know I can't do it alone.
+-   It's been a fun trip so far, but to make it successful I know I can't do it alone. I need to grow the team as much as the product at this stage, and every contact helps :)
 :::
 
 # Contact {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
