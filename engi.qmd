@@ -6,131 +6,164 @@ format:
     logo: static/icons/logo.png
     title-slide-attributes:
         data-background-image: static/images/gradient2-A1aNg8Lg5NTlR0e3.svg
-filters:
-   - roughnotation
 ---
 
 # The Energy Market has a Data Science Problem
 
+::: notes
+> Hi! I'm Dave and I'm here to share my work on ENGI.AI.
+
+- The energy market has a data science problem.
+:::
+
+
 ## Forecasting is the goal
 ::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 > "Forecasting using Time Series is the most common data science technique" - Energy Systems Catapult
 :::
 
-::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 ![](static/icons/3308891-200.png)
 :::
 :::
 
 ::: notes
--   Forecasting is the most common data science objective
-    -   according to 95% of data scientists in the industry
--   Forecasting future energy demand, and the associated cost or supplying it.
+- Forecasting is the most common data science objective
+    - according to 95% of data scientists in the energy market
+- The reasons for forecasting are quite common
+    - Energy Trading
+    - Energy Management
+    - Energy Efficiency
+    - Energy Storage
+    - Energy Generation
+- All of these are reliant on, or can be enhanced by, good forecasting
 :::
 
 ## Data access is not the challenge
 
 ::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 > "The majority of buildings in the UK have a smart meter" - *BEIS*
 :::
 
-::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 ![](static/icons/data.png)
 :::
 :::
 
 ::: notes
--   Over 50% of the buildings in the UK have smart meters
-    -   According to BEIS
--   Octopus customers have first class integrations to their smart meter
--   Industry standard data aggregators and D10 flow
+- Data access is not the challenge
+  - At least not any more
+- Data interconnectivty is relatively good in the UK
+- Over 50% of the buildings in the UK have smart meters
+  - According to BEIS
+- Octopus customers have first class integrations to their smart meter
+- Industry standard data aggregators and the D10 flow also help the data access landscape
 :::
 
 ## Demand for skills \> Supply
 
 ::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 > 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - *Energy Systems Catapult*
 :::
 
-::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 ![](/static/icons/Data_Science_VD.png){fig-align="center"}
 :::
 :::
 
 ::: notes
--   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but we are pretty out-numbered
-    -   Hard to find with correct skills
-        -   Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
-        -   Important to have Energy Market domain skills AND general software development skills in addition to Data Science Experience
+- Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but we are pretty out-numbered
+  - Hard to find with correct skills
+    - Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
+    - Important to have Energy Market domain skills AND general software development skills in addition to Data Science Experience
+- This is what is making it hard to scale data science in the energy market
+  - And therefore also the products that rely on them
 :::
 
 # Existing non-solutions
+
+::: notes
+- There are some common tools and approaches in this space
+  - But they all fail to solve the problem due to limitations of 
+    - Scale
+    - Accuracy
+    - Accessibility
+:::
+
 
 ## EPC/SAP
 
 ![](static/images/example-epc.png)
 
--   Very simple output
--   Very old information
+* Scale limited by qualified surveyors
+  * And the cost and time of surveying
+* Only gives a usage range over year
+  * Not very useful for many needs
 
 ::: notes
--   Government mandated Excel Calculator
--   Requires survey or desktop study by a professional
--   Only gives a usage range over year
--   Surveys only need to be re-done in specific purchases or changes of use
-    -   Might be up to 10 years
+- A common tool in the UK is the EPC/SAP
+  - Government mandated Excel Calculator
+- Requires survey or desktop study by a qualified professional for each building
+- Only gives a usage range over year
+- Surveys only need to be re-done in specific purchases or changes of use
+  - Might be up to 10 years
 :::
 
 ## Building simulation
 
 ::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 ![](static/icons/autodesk.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
 :::
 
-::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
--   requires specialists to both survey and then operate
-    -   hard to build
--   requires a different model and survey per building
-    -   can't scale at all
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
+- requires a different model and survey per building
+  - can't scale at all
+- requires specialists to both survey and then simulate
+  - expensive to run per building
 :::
 :::
 
 ::: notes
--   EnergyPlus and AutoDesk are the main suppliers
--   Whole building physics simulation software
--   Highly specialised and technical, with expensive licenses
--   Again this is not scaleable as each building needs it's own model
--   Difficult/illegal to integrate into other software to resell
--   Intended primarily for architecture/engineering work
+- A more heavy approach is to use building simulation software
+  - EnergyPlus and AutoDesk are the main suppliers
+- These are highly specialised and technical pieces of software
+  - with expensive licenses
+- Intended primarily for architecture/engineering work
+- Again this is not scaleable as each building needs it's own model
+- Difficult and potentially illegal to integrate into other software
+  - Depending on use and license
 :::
 
 ## Custom Excel
 
 ::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column width="40%" style="display: flex; justify-content: center; align-items: center;"}
--   Sheets are fragile
--   Import and export adds friction
--   Scale limited by available staff
--   Impossible to use the best techniques
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
+- Impossible to use the best techniques
+- Scale limited by available staff
+- Sheets are fragile
+- Import and export adds friction
 :::
 
-::: {.column width="60%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
 ![](/static/icons/Microsoft_Excel_2013-2019_logo.png)
 :::
 :::
 
 ::: notes
--   Seems to be popular still
-    -   Followed by R, and beaten by 2x by Python
--   Painful to build, worse to maintain
--   Small breakages can go un-noticed for a long time
--   Time to calculate a sheet can be nearly hours for 'advanced' models
-    -   Still not actually that effective
--   Doesn't scale without more hiring to 'drive' the sheets
+- Therefore many companies have built their own Excel sheets
+  - Still seems to be a popular choice
+- However this can be painful to build, worse to maintain, and limited in accuracy
+  - Small breakages can go un-noticed for a long time
+    - It's common to hand these tools between staff, so you may easily be the third person (or more) to handle it
+      - It's far too likely that the original authors work was 'modified' by the remaining authors, and so this sheet gets run for months or even years before someone realises the formula in sheet 1, cell X73 doesn't modify the value in sheet 2 the way it should, and this has been used to serve customers for an embarrassing amount of time
+- Excel is also limited in how advanced it can actually get
+  - Time to calculate a sheet can be nearly hours for 'advanced' models
+    - Still not actually that effective or accurate
+- Doesn't scale without hiring more staff to 'drive' more Excel workbooks per day
 :::
 
 ## In-House Software Development
@@ -140,14 +173,22 @@ filters:
 ```{=tex}
 \begin{gather*}
 cost = (salary * members) + OPEX + lost\: earning\\
-cost = (50000 * [5-9]) + ?
+cost = (50000 * [5-9]) + ? + ?
 \end{gather*}
 ```
 ::: notes
--   Need to hire multiple data scientists
-    -   with the RIGHT domain knowledge
--   and maybe normal software developers too
--   and then design, build, deploy and maintain
+- So inevitably some companies have decided to build their own software
+	- This is a good idea, but it's not easy
+- You need to hire data scientists
+  - with the RIGHT domain knowledge and maths understanding
+  - probably multiple times
+  - and then you have to keep them	
+    - bare in mind the supply > demand problem
+  - and then you have to build the software and deploy it out to get any return on investment
+  - and then maintain and iterate on that system
+- The kicker of all this is, that everyone is doing it, going out and building data science teams in house, but they come out with fundamentally the same product
+  - Data Scientists in the sweet spot here are rare, but they go through multiple companies, rebuilding effectively the same systems, with the same techniques.
+    - I should know, I've done it
 :::
 
 # ENGI.AI
@@ -176,16 +217,6 @@ Stays up to date
 :::
 
 ::: {.column width="25%"}
-Scales with demand
-
-::: r-stack
-![](static/icons/stack.png)
-
-![](static/icons/tick.png){.fragment}
-:::
-:::
-
-::: {.column width="25%"}
 Modern Accuracy
 
 ::: r-stack
@@ -194,16 +225,27 @@ Modern Accuracy
 ![](static/icons/tick.png){.fragment}
 :::
 :::
+
+::: {.column width="25%"}
+Scales with demand
+
+::: r-stack
+![](static/icons/stack.png)
+
+![](static/icons/tick.png){.fragment}
+:::
+:::
 :::
 
 ::: notes
--   Not reliant on surveys
--   Up to date with the building
--   Informed by domain knowledge
--   Scales better than
-    -   a simulation per building
-    -   an excel sheet per employee
-    -   a data science team per company
+- Not reliant on surveys
+- Stays up to date with the buildings changes in construction and operation
+- Informed by deep domain knowledge
+  - Using the most accurate techniques available
+- Scales better than
+  - a simulation per building
+  - an excel sheet per employee
+  - a data science team per company
 :::
 
 ## ENGI.AI {auto-animate=true}
@@ -249,25 +291,75 @@ Modern Accuracy
   - Uses the most current Machine Learning tools and techniques 
   - Learns from the buildings smart meter data 
 - Designed to be integrated 
-    - Apps 
-    - IoT/BMS 
-    - Network mechanisms 
+  - Apps 
+  - IoT/BMS 
+  - Network mechanisms 
 :::
 
-## Enables Diverse Energy Benefits
+## Enables Diverse Net Zero Strategies
+
+::: columns
+::: {.column width="25%"}
+Sophisticated demand side response
+:::
+::: {.column width="25%"}
+Optimal use of energy storage
+:::
+::: {.column width="25%"}
+Confident use of flexible tariffs
+:::
+::: {.column width="25%"}
+Distributed control of electric vehicle charging
+:::
+:::
+
 
 ::: notes
--   Sophisticated demand side response to help support load balancing.
-    -   Solves peak power carbon intensity
--   Smart storage control algorithms to improve utilisation of renewable energy.
-    -   Solves virtual power plants
--   Smart meters to reduce costs through dynamic prices or improve energy efficiency.
-    -   Big Turn down
--   Electric vehicles enabled with two-way communications to provide distributed control and reduce network strain.
-    -   Third Industrial Revolution power supply
+- This approach unlocks a number of product categories
+  - Sophisticated demand side response to help support load balancing becomes possible
+    - Solves peak power carbon intensity
+  - Smart storage control algorithms to improve utilisation of stored energy becomes widely available
+    - Enhances the value of battery storage and renewable generation
+  - Increase the confidence of consumers with flexible energy products
+    - Improving adoption of time of use tariffs
+  - Electric vehicles can be charged in a distributed manner more effectively
+    - Improving the value of EVs and mitigating for the impact of them on grid infrastructure
+- And because it's designed to be integrated, it's ready to go when you are
+	- Because the climate crisis isn't waiting for anyone
 :::
 
+## Potential Revenue Models
+
+- Monthly subscription
+    - Domestic
+    - Per building
+- Per prediction
+    - Commercial software
+- Per device license
+    - IoT
+    - Edge
+
 # Where is ENGI.AI now?
+
+## Traction + Status
+
+- Dec -> Feb: Tramshed Tech Start up Academy
+- Mar: Live demo launched using real data and real AI
+- Apr: Building MVP
+- May: Release MVP to selected pre-alpha users
+- Jun: Alpha release to general waitlist
+
+<!-- Add dates and timeline? -->
+
+::: notes
+- Over Christmas I was in the Tramshed Tech Start Up Academy in Wales
+- Then I built and published a demo of the software using real data and real AI
+- Since then I've built the skeleton of an MVP around that
+- Which has been in some very specific users hands for a few weeks
+- The general waitlist will start being on boarded this month
+  - Progressing over June into a more general release
+:::
+
 
 ## Who am I
 
@@ -286,45 +378,43 @@ Modern Accuracy
 :::
 
 ::: notes
--   10 years building analytics software and data science services
--   8 years in energy efficiency and management market
--   2 years leading software and product development
+- And right now I'm the only person working on this
+- I have a masters in Environmental Building Science
+	- Which is the study of how buildings work
+- which lead me into the energy sector building data science software products
+- In the last few years I've been leading software product development teams in this market
+- And now I'm building ENGI.AI 
 :::
-
-## Traction + Status
-
--   Running MVP
--   Release to pre-alpha users
--   Growing waitlist for alpha release
-
-## Revenue Model
-
--   Monthly subscription
-    -   Domestic
-    -   Per building
--   Per prediction
-    -   Commercial software
--   Per device license
-    -   IoT
-    -   Edge
 
 ## Ask
 
--   Building a team
+- Energy sector contacts
+  - Users
+  - Partners
+  - People interested in being team mate 1-5 
+  - Investors?
 
-# Appendix
+::: notes
+- And so my ask for you folks is contacts and referrals
+- If over the last 10 minutes you've joined me in seeing the value of a product like this, keep ENGI.AI in mind when you're talking to people in the energy sector
+- It's been a fun trip so far, but to make it successful I know I can't do it alone.
+:::
 
-## References
 
--   [Energy Systems Catapult - Data Science Skills in the Energy Sector](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
--   [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
--   [THE DATA SCIENCE VENN DIAGRAM - Drew Conway](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
--   [UK Data Science Salary - Glassdoor.com](https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn)
+## Contact
 
-## History of flexibility in the energy market
+- [www.engi.ai](https://engi.ai)
+- [LinkedIn/engi-ai](https://www.linkedin.com/company/engi-ai)
+- [Twitter/engi_ai](https://twitter.com/engi_ai)
 
-## It's X but for Y
+<!-- Add QR code -->
 
--   It's stripe but for energy analytics dashboards
--   It's sendgrid but for intelligent batteries
--   It's auth0 but for virtual power plants
+::: notes
+Here's a lot of information on where to find me in one slide
+
+# References
+
+- [Energy Systems Catapult - Data Science Skills in the Energy Sector](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
+- [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
+- [THE DATA SCIENCE VENN DIAGRAM - Drew Conway](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
+- [UK Data Science Salary - Glassdoor.com](https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn)
