@@ -1,14 +1,18 @@
 ---
 title: "ENGI.AI"
+subtitle: "The AI platform for the Energy Market"
 format:
   revealjs: 
     theme: [dark, static/styles/custom.scss]
     logo: static/icons/logo.png
+    footer: WWW.ENGI.AI
     title-slide-attributes:
         data-background-image: static/images/gradient2-A1aNg8Lg5NTlR0e3.svg
+    template-partials: 
+        - title-slide.html
 ---
 
-# The Energy Market has a Data Science Problem
+# The Energy Market has a Data Science Problem {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
 
 ::: notes
 > Hi! I'm Dave and I'm here to share my work on ENGI.AI.
@@ -83,7 +87,7 @@ format:
     -   And therefore also the products that rely on them
 :::
 
-# Existing non-solutions
+# Existing non-solutions {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
 
 ::: notes
 -   There are some common tools and approaches in this space
@@ -115,7 +119,7 @@ format:
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](static/icons/autodesk.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
+![](static/icons/parent-logo-white.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
 :::
 
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -190,7 +194,7 @@ cost = (50000 * [5-9]) + ? + ?
         -   I should know, I've done it
 :::
 
-# ENGI.AI
+# ENGI.AI {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
 
 ## A good solution {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
@@ -344,6 +348,8 @@ Electric Vehicle Charging Control
 :::
 
 ## Potential Revenue Models {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+::: columns
+::: {.column}
 
 -   Monthly subscription
     -   Domestic
@@ -353,12 +359,20 @@ Electric Vehicle Charging Control
 -   Per device license
     -   IoT
     -   Edge
+:::
+::: {.column}
+![](static/icons/noun-pound-currency-5631043-E03584.svg)
+:::
+
+:::
+
+
 
 ::: notes
 -   Eventually moving into revenue generation there should be various suitable models for pricing. Depending on where and what type of market demand can be captured.
 :::
 
-# Where is ENGI.AI now?
+# Where is ENGI.AI now? {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
 
 ## Traction + Status {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
@@ -409,8 +423,7 @@ Electric Vehicle Charging Control
 -   Energy sector contacts
     -   Users
     -   Partners
-    -   People interested in being team mate 1-5
-    -   Investors?
+    -   People interested in being part of building ENGI.AI
 
 ::: notes
 -   And so my ask for you folks is contacts and referrals
@@ -420,9 +433,20 @@ Electric Vehicle Charging Control
 
 # Contact {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
--   [www.engi.ai](https://engi.ai)
--   [LinkedIn/engi-ai](https://www.linkedin.com/company/engi-ai)
--   [Twitter/engi_ai](https://twitter.com/engi_ai)
+::: columns
+::: {.column width="50%"}
+-   [email: dave@engi.ai]()
+-   [web: www.engi.ai](https://engi.ai)
+-   [LinkedIn: engi-ai](https://www.linkedin.com/company/engi-ai)
+-   [Twitter: @engi_ai](https://twitter.com/engi_ai)
+
+:::
+::: {.column width="50%"}
+![](static/images/qrcode_www.engi.ai.png)
+:::
+
+:::
+
 
 <!-- Add QR code -->
 
