@@ -439,6 +439,7 @@ Electric Vehicle Charging Control
 -   [web: www.engi.ai](https://engi.ai)
 -   [LinkedIn: engi-ai](https://www.linkedin.com/company/engi-ai)
 -   [Twitter: @engi_ai](https://twitter.com/engi_ai)
+-   [This Presentation: daveparr.github.io/engi-ai-pitch](https://daveparr.github.io/engi-ai-pitch)
 
 :::
 ::: {.column width="50%"}
@@ -456,7 +457,7 @@ Electric Vehicle Charging Control
 
 ## Sources
 
--   [Energy Systems Catapult - Data Science Skills in the Energy Sector](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
+-   [Data Science Skills in the Energy Sector - Energy Systems Catapult](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
 -   [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
 -   [THE DATA SCIENCE VENN DIAGRAM - Drew Conway](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
 -   [UK Data Science Salary - Glassdoor.com](https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn)
