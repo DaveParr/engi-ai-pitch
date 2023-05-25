@@ -36,11 +36,11 @@ format:
 -   Forecasting is the most common data science objective
     -   according to 95% of data scientists in the energy market
 -   The reasons for forecasting are quite common
-    -   Energy Trading
-    -   Energy Management
-    -   Energy Efficiency
-    -   Energy Storage
-    -   Energy Generation
+    -   Trading
+    -   Management
+    -   Efficiency
+    -   Storage
+    -   Generation
 -   All of these are reliant on, or can be enhanced by, good forecasting
 :::
 
@@ -426,7 +426,7 @@ Electric Vehicle Charging Control
 ::: notes
 -   And so my ask for you folks is a mention in the right place
 -   If over the last few minutes you've joined me in seeing the value of a product like this, keep ENGI.AI in mind when you're talking to people in your networks
--   It's been a fun trip so far, but to make it successful I know I can't do it alone. I need to grow the team as much as the product at this stage, and every contact helps :)
+-   It's been a fun trip so far, but to make it successful I know I can't do it alone. I need to grow the team as much as the product at this stage, and every contact helps
 :::
 
 # Contact {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
@@ -437,7 +437,7 @@ Electric Vehicle Charging Control
 -   [web: www.engi.ai](https://engi.ai)
 -   [LinkedIn: engi-ai](https://www.linkedin.com/company/engi-ai)
 -   [Twitter: @engi_ai](https://twitter.com/engi_ai)
--   [This Presentation: daveparr.github.io/engi-ai-pitch](https://daveparr.github.io/engi-ai-pitch)
+-   [This Presentation: engi-ai.github.io/engi-ai-pitch](https://engi-ai.github.io/engi-ai-pitch/)
 
 :::
 ::: {.column width="50%"}
