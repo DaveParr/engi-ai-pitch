@@ -1,7 +1,9 @@
 /*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // fonts
-$font-family-sans-serif: "Montserrat", serif !default;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
 
 // colours
 $colour-pink: #E03584;
@@ -11,5 +13,5 @@ $colour-purple: #7634BF;
 $link-color: $colour-green !default;
 
 // headings
-$presentation-heading-font: "Rubik Mono One", !default;
+$presentation-heading-font: "Rubik Mono One" !default;
 $presentation-heading-color: $colour-pink !default;
