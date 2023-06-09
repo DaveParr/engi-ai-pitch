@@ -36,11 +36,11 @@ format:
 -   Forecasting is the most common data science objective
     -   according to 95% of data scientists in the energy market
 -   The reasons for forecasting are quite common
-    -   Energy Trading
-    -   Energy Management
-    -   Energy Efficiency
-    -   Energy Storage
-    -   Energy Generation
+    -   Trading
+    -   Management
+    -   Efficiency
+    -   Storage
+    -   Generation
 -   All of these are reliant on, or can be enhanced by, good forecasting
 :::
 
@@ -82,7 +82,7 @@ format:
 -   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but we are pretty out-numbered
     -   Hard to find with correct skills
         -   Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
-        -   Important to have Energy Market domain skills AND general software development skills in addition to Data Science Experience
+        -   Important to have Energy Market domain knowledge AND general software development skills in addition to Data Science Experience
 -   This is what is making it hard to scale data science in the energy market
     -   And therefore also the products that rely on them
 :::
@@ -281,7 +281,7 @@ Scales with demand
 
 ::: columns
 ::: {.column width="33%"}
-![](/static/icons/noun-app-5058288-E03584.svg){.fragment}
+![](static/icons/noun-app-5058288-E03584.svg){.fragment}
 :::
 
 ::: {.column width="33%"}
@@ -376,13 +376,11 @@ Electric Vehicle Charging Control
 
 ## Traction + Status {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
--   Dec -\> Feb: Tramshed Tech Start up Academy
+-   Dec -\> Feb: Tramshed Tech Start Up Academy
 -   Mar: Live demo launched using real data and real AI
--   Apr: Building MVP
+-   Apr:Building MVP
 -   May: Release MVP to selected pre-alpha users
 -   Jun: Alpha release to general waitlist
-
-<!-- Add dates and timeline? -->
 
 ::: notes
 -   Over Christmas I was in the Tramshed Tech Start Up Academy in Wales
@@ -427,8 +425,8 @@ Electric Vehicle Charging Control
 
 ::: notes
 -   And so my ask for you folks is a mention in the right place
--   If over the last 10 minutes you've joined me in seeing the value of a product like this, keep ENGI.AI in mind when you're talking to people in the energy sector
--   It's been a fun trip so far, but to make it successful I know I can't do it alone. I need to grow the team as much as the product at this stage, and every contact helps :)
+-   If over the last few minutes you've joined me in seeing the value of a product like this, keep ENGI.AI in mind when you're talking to people in your networks
+-   It's been a fun trip so far, but to make it successful I know I can't do it alone. I need to grow the team as much as the product at this stage, and every contact helps
 :::
 
 # Contact {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
@@ -439,7 +437,7 @@ Electric Vehicle Charging Control
 -   [web: www.engi.ai](https://engi.ai)
 -   [LinkedIn: engi-ai](https://www.linkedin.com/company/engi-ai)
 -   [Twitter: @engi_ai](https://twitter.com/engi_ai)
--   [This Presentation: daveparr.github.io/engi-ai-pitch](https://daveparr.github.io/engi-ai-pitch)
+-   [This Presentation: engi-ai.github.io/engi-ai-pitch](https://engi-ai.github.io/engi-ai-pitch/)
 
 :::
 ::: {.column width="50%"}
@@ -459,5 +457,5 @@ Electric Vehicle Charging Control
 
 -   [Data Science Skills in the Energy Sector - Energy Systems Catapult](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
 -   [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
--   [THE DATA SCIENCE VENN DIAGRAM - Drew Conway](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
+-   [The Data Science Venn Diagram - Drew Conway](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
 -   [UK Data Science Salary - Glassdoor.com](https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn)
