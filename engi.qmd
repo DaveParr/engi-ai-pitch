@@ -281,7 +281,7 @@ Scales with demand
 
 ::: columns
 ::: {.column width="33%"}
-![](/static/icons/noun-app-5058288-E03584.svg){.fragment}
+![](static/icons/noun-app-5058288-E03584.svg){.fragment}
 :::
 
 ::: {.column width="33%"}
