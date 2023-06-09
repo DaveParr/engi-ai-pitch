@@ -74,7 +74,7 @@ format:
 :::
 
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](/static/icons/Data_Science_VD.png){fig-align="center"}
+![](static/icons/Data_Science_VD.png){fig-align="center"}
 :::
 :::
 
@@ -152,7 +152,7 @@ format:
 :::
 
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](/static/icons/Microsoft_Excel_2013-2019_logo.png)
+![](static/icons/Microsoft_Excel_2013-2019_logo.png)
 :::
 :::
 
@@ -171,7 +171,7 @@ format:
 
 ## In-House Software Development {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
-![](/static/icons/Data_Science_VD.png){fig-align="center"}
+![](static/icons/Data_Science_VD.png){fig-align="center"}
 
 ```{=tex}
 \begin{gather*}
