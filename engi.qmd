@@ -1,6 +1,6 @@
 ---
 title: "ENGI.AI"
-subtitle: "The AI platform for the Energy Market"
+subtitle: "The AI platform for the Net Zero"
 format:
   revealjs: 
     theme: [dark, static/styles/custom.scss]
@@ -20,11 +20,33 @@ format:
 -   The energy market has a data science problem.
 :::
 
+## Demand for skills \> Supply of people {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+
+::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
+> 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - *Energy Systems Catapult*
+:::
+
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
+![](static/icons/data-science-venn.png){fig-align="center"}
+:::
+:::
+
+::: notes
+-   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but we are pretty out-numbered
+    -   Hard to find with correct skills
+        -   Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
+        -   Important to have Energy Market domain knowledge AND general software development skills in addition to Data Science Experience
+-   This is what is making it hard to scale data science in the energy market
+    -   And therefore also the products that rely on them
+:::
+
+
 ## Forecasting is the goal {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
-> "Forecasting using Time Series is the most common data science technique" - Energy Systems Catapult
+> "Forecasting using Time Series is the most common data science technique" - *Energy Systems Catapult*
 :::
 
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -44,183 +66,76 @@ format:
 -   All of these are reliant on, or can be enhanced by, good forecasting
 :::
 
-## Data access is not the challenge {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+## Data is fueling a Clean Tech Boom {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
-::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
+
 > "The majority of buildings in the UK have a smart meter" - *BEIS*
-:::
 
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](static/icons/noun-data-2500464-E03584.svg)
-:::
-:::
+- Energy management and reporting 
+- Home Automation and IoT
+- Electric Vehicle Charging
+- Domestic Solar PV and Battery Storage
 
 ::: notes
--   Data access is not the challenge
-    -   At least not any more
--   Data interconnectivity is relatively good in the UK
--   Over 50% of the buildings in the UK have smart meters
-    -   According to BEIS
--   Octopus customers have first class integrations to their smart meter
--   Industry standard data aggregators and the D10 flow also help the data access landscape
+-   As smart meter uptake increases, so does the amount of data available
+    -   This information is being actively used to achieve Net-Zero by energy management and reporting companies
+    -   Most of the products need some form of forecasting the expected energy demand so that it can be met in the greenest possible way
+    -   This is also true for the people who run the grid.
 :::
 
-## Demand for skills \> Supply of people {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+## Network Operators to System Operators {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
-> 40% of companies find it "Very Difficult" to hire Data Scientists with the right skills - *Energy Systems Catapult*
+::: {.column}
+**DNO**
+
+- Own, operate and maintain the distribution network
 :::
+::: {.column}
+**DSO**
 
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](static/icons/Data_Science_VD.png){fig-align="center"}
-:::
-:::
-
-::: notes
--   Very difficult to hire data scientists, no offence to the JavaScript/PHP/Ruby devs, but we are pretty out-numbered
-    -   Hard to find with correct skills
-        -   Tend to have a minimum of an Undergraduate Degree in Engineering or Mathematics
-        -   Important to have Energy Market domain knowledge AND general software development skills in addition to Data Science Experience
--   This is what is making it hard to scale data science in the energy market
-    -   And therefore also the products that rely on them
-:::
-
-# Existing non-solutions {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
-
-::: notes
--   There are some common tools and approaches in this space
-    -   But they all fail to solve the problem due to limitations of
-        -   Scale
-        -   Accuracy
-        -   Accessibility
-:::
-
-## EPC/SAP {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-
-![](static/images/example-epc.png)
-
--   Scale limited by qualified surveyors
-    -   And the cost and time of surveying
--   Only gives a usage range over year
-    -   Not very useful for many needs
-
-::: notes
--   A common tool in the UK is the EPC/SAP
-    -   Government mandated Excel Calculator
--   Requires survey or desktop study by a qualified professional for each building
--   Only gives a usage range over year
--   Surveys only need to be re-done in specific purchases or changes of use
-    -   Might be up to 10 years
-:::
-
-## Building simulation {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-
-::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](static/icons/autodesk.svg){width="100%"} ![](static/icons/Energyplus.gif){width="70%"}
-:::
-
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
--   requires a different model and survey per building
-    -   can't scale at all
--   requires specialists to both survey and then simulate
-    -   expensive to run per building
+- Monitor, control and actively manage the power flows
+- Enable Distributed Energy Resources on distribution networks
+- Enable customers to be producers, consumers and storers of energy
 :::
 :::
 
 ::: notes
--   A more heavy approach is to use building simulation software
-    -   EnergyPlus and AutoDesk are the main suppliers
--   These are highly specialised and technical pieces of software
-    -   with expensive licenses
--   Intended primarily for architecture/engineering work
--   Again this is not scaleable as each building needs it's own model
--   Difficult and potentially illegal to integrate into other software
-    -   Depending on use and license
+-   OFGEM is pushing for Distribution Network Operators to become Distribution System Operators
+    -   Distribution Network Operators to become Distribution System Operators
+    -   A DSO's responsibility expands on a DNO's
+        -   As a DSO they need to become more actively involved in the operation of the network
+        -   In order to control and actively manage the power flows, they are going to need an accurate forecast of the demand, at a more granular level than they have now
+    -   This is need is also shared by virtual power plant operators
+        -   Who need to be able to forecast the demand of their aggregated assets
 :::
 
-## Custom Excel {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-
-::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
--   Impossible to use the best techniques
--   Scale limited by available staff
--   Sheets are fragile
--   Import and export adds friction
-:::
-
-::: {.column style="display: flex; justify-content: center; align-items: center;"}
-![](static/icons/Microsoft_Excel_2013-2019_logo.png)
-:::
-:::
-
-::: notes
--   Therefore many companies have built their own Excel sheets
-    -   Still seems to be a popular choice
--   However this can be painful to build, worse to maintain, and limited in accuracy
-    -   Small breakages can go un-noticed for a long time
-        -   It's common to hand these tools between staff, so you may easily be the third person (or more) to handle it
-            -   It's far too likely that the original authors work was 'modified' by the remaining authors, and so this sheet gets run for months or even years before someone realises the formula in sheet 1, cell X73 doesn't modify the value in sheet 2 the way it should, and this has been used to serve customers for an embarrassing amount of time
--   Excel is also limited in how advanced it can actually get
-    -   Time to calculate a sheet can be nearly hours for 'advanced' models
-        -   Still not actually that effective or accurate
--   Doesn't scale without hiring more staff to 'drive' more Excel workbooks per day
-:::
-
-## In-House Software Development {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-
-![](static/icons/Data_Science_VD.png){fig-align="center"}
-
-```{=tex}
-\begin{gather*}
-cost = (salary * members) + OPEX + lost\: earning\\
-cost = (50000 * [5-9]) + ? + ?
-\end{gather*}
-```
-::: notes
--   So inevitably some companies have decided to build their own software
-    -   This is a good idea, but it's not easy
--   You need to hire data scientists
-    -   with the RIGHT domain knowledge and maths understanding
-    -   probably multiple times
-    -   and then you have to keep them
-        -   bare in mind the supply \> demand problem
-    -   and then you have to build the software and deploy it out to get any return on investment
-    -   and then maintain and iterate on that system
--   The kicker of all this is, that everyone is doing it, going out and building data science teams in house, but they come out with fundamentally the same product
-    -   Data Scientists in the sweet spot here are rare, but they go through multiple companies, rebuilding effectively the same systems, with the same techniques.
-        -   I should know, I've done it
-:::
 
 # ENGI.AI {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
+
+## Benefits of ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+
+- Consumption Demand Forecasting for each building
+- No expensive, time consuming survey required
+- Learns from the buildings as they improve
+- Easy to integrate into IoT, SaaS, BMS, and the National Grid
 
 ## A good solution {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: columns
-::: {.column width="25%"}
-Removes surveys
-
-::: r-stack
-![](static/icons/noun-survey-5019405-E03584.svg)
-
-![](static/icons/noun-cross-1030213-7634BF.svg){.fragment}
-:::
-:::
 
 ::: {.column width="25%"}
-Removes old data
+Drop in integration
 
 ::: r-stack
 ![](static/icons/noun-scarcity-2757787-E03584.svg)
 
-![](static/icons/noun-cross-1030213-7634BF.svg){.fragment}
+![](static/icons/noun-check-mark-1030211-D9E035.svg){.fragment}
 :::
 :::
 
 ::: {.column width="25%"}
-Modern Accuracy
+Modern techniques
 
 ::: r-stack
 ![](static/icons/noun-machine-learning-1119910-E03584.svg)
@@ -238,6 +153,17 @@ Scales with demand
 ![](static/icons/noun-check-mark-1030211-D9E035.svg){.fragment}
 :::
 :::
+
+::: {.column width="25%"}
+No survey required
+
+::: r-stack
+![](static/icons/noun-survey-5019405-E03584.svg)
+
+![](static/icons/noun-cross-1030213-7634BF.svg){.fragment}
+:::
+:::
+
 :::
 
 ::: notes
@@ -254,42 +180,44 @@ Scales with demand
 ## ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
 ::: {style="color: #D9E035;"}
-**Artificial Intelligence as a Service for the Energy Market**
+**Artificial Intelligence Platform for Net Zero**
 :::
 
 ## ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
-![](static/images/prediction.avif)
+![](static/images/prediction.avif){data-id="prediction"}
 
 ::: {style="color: #D9E035;"}
-**Artificial Intelligence as a Service for the Energy Market**
+**Artificial Intelligence Platform for Net Zero**
 :::
 
 ## ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
 ::: {.columns style="display: flex !important; height: 40%;"}
 ::: {.column width="66%"}
-![](static/images/prediction.avif)
+
+![](static/images/prediction.avif){data-id="prediction" auto-animate-unmatched=true}
+
 :::
 
 ::: {.column width="33%"}
 ::: {style="color: #D9E035;"}
-**Artificial Intelligence as a Service for the Energy Market**
+**Artificial Intelligence Platform for Net Zero**
 :::
 :::
 :::
 
 ::: columns
 ::: {.column width="33%"}
-![](static/icons/noun-app-5058288-E03584.svg){.fragment}
+![](static/icons/noun-app-5058288-E03584.svg){.fragment auto-animate-unmatched=true}
 :::
 
 ::: {.column width="33%"}
-![](static/icons/noun-api-3097531-E03584.svg){.fragment}
+![](static/icons/noun-api-3097531-E03584.svg){.fragment auto-animate-unmatched=true}
 :::
 
 ::: {.column width="33%"}
-![](static/icons/noun-management-5058297-E03584.svg){.fragment}
+![](static/icons/noun-management-5058297-E03584.svg){.fragment auto-animate-unmatched=true}
 :::
 :::
 
@@ -305,31 +233,31 @@ Scales with demand
     -   Network mechanisms
 :::
 
-## Enables Net Zero Innovation {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+## Foundational to Net Zero Innovation {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate=true auto-animate-easing="ease-in-out"}
 
-::: columns
-::: {.column width="25%"}
+::: {.r-hstack}
+::: {}
 Demand Side Response Systems
 
-![](static/icons/noun-bar-chart-609657-E03584.svg)
+![](static/icons/noun-bar-chart-609657-E03584.svg){data-id="bar-chart"}
 :::
 
-::: {.column width="25%"}
+::: {}
 Grid Connected Energy Storage
 
-![](static/icons/noun-charging-5510101-E03584.svg)
+![](static/icons/noun-charging-5510101-E03584.svg){data-id="charging"}
 :::
 
-::: {.column width="25%"}
+::: {}
 Time of Use Flexible Energy Tariffs
 
-![](static/icons/noun-flexible-time-4720762-E03584.svg)
+![](static/icons/noun-flexible-time-4720762-E03584.svg){data-id="flexible-time"}
 :::
 
-::: {.column width="25%"}
+::: {}
 Electric Vehicle Charging Control
 
-![](static/icons/noun-electric-car-2935060-E03584.svg)
+![](static/icons/noun-electric-car-2935060-E03584.svg){data-id="electric-car"}
 :::
 :::
 
@@ -343,9 +271,55 @@ Electric Vehicle Charging Control
         -   Improving adoption of time of use tariffs
     -   Electric vehicles can be charged in a distributed manner more effectively
         -   Improving the value of EVs and mitigating for the impact of them on grid infrastructure
--   And because it's designed to be integrated, it's ready to go when you are
+::: 
+
+## ENGI.AI accelerates the transition {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate=true auto-animate-easing="ease-in-out"}
+::: {.columns style="display: flex !important; height: 90%;"}
+
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
+![](static/icons/logo.png){data-id="logo"}
+:::
+
+::: {.column width="33%" style="display: flex; justify-content: center; align-items: center;"}
+::: {.r-hstack}
+::: {}
+![](static/icons/noun-api-3097531-E03584.svg){data-id="api"}
+:::
+
+::: {.fragment}
+![](static/icons/noun-arrow-right-3984884-D9E035.svg){data-id="arrow-right"}
+:::
+
+:::
+:::
+
+::: {.column width="33%"}
+
+::: {style="width: 125px; height: 125px;"}
+![](static/icons/noun-bar-chart-609657-E03584.svg){data-id="bar-chart" auto-animate-delay="0.5"}
+:::
+
+::: {style="width: 125px; height: 125px;"}
+![](static/icons/noun-charging-5510101-E03584.svg){data-id="charging" auto-animate-delay="0.3"}
+:::
+
+::: {style="width: 125px; height: 125px;"}
+![](static/icons/noun-flexible-time-4720762-E03584.svg){data-id="flexible-time" auto-animate-delay="0.2"}
+:::
+
+::: {style="width: 125px; height: 125px;"}
+![](static/icons/noun-electric-car-2935060-E03584.svg){data-id="electric-car" auto-animate-delay="0.1"}
+:::
+
+:::
+
+:::
+
+::: notes
+-   And because it's designed to be integrated, it's ready to go when you are with minimal effort through our REST based API
     -   Because the climate crisis isn't waiting for anyone
 :::
+
 
 ## Potential Revenue Models {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 ::: columns
@@ -360,13 +334,11 @@ Electric Vehicle Charging Control
     -   IoT
     -   Edge
 :::
+
 ::: {.column}
 ![](static/icons/noun-pound-currency-5631043-E03584.svg)
 :::
-
 :::
-
-
 
 ::: notes
 -   Eventually moving into revenue generation there should be various suitable models for pricing. Depending on where and what type of market demand can be captured.
@@ -380,53 +352,20 @@ Electric Vehicle Charging Control
 -   Mar: Live demo launched using real data and real AI
 -   Apr:Building MVP
 -   May: Release MVP to selected pre-alpha users
--   Jun: Alpha release to general waitlist
+-   Jun -\> Sep: Alpha release to general waitlist
+-   Sept -\> Dec: General availability
 
 ::: notes
--   Over Christmas I was in the Tramshed Tech Start Up Academy in Wales
--   Then I built and published a demo of the software using real data and real AI
--   Since then I've built the skeleton of an MVP around that
--   Which has been in some very specific users hands for a few weeks
--   The general waitlist will start being on boarded this month
-    -   Progressing over June into a more general release
-:::
-
-## Who am I {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-
-::: columns
-::: {.column width="33%"}
-![Environmental Building Science MSc](static/icons/noun-approve-5425487-E03584.svg)
-:::
-
-::: {.column width="33%"}
-![10 years developing data science software](static/icons/noun-coding-1709223-E03584.svg)
-:::
-
-::: {.column width="33%"}
-![2 years leading product development](static/icons/noun-development-2434840-E03584.svg)
-:::
-:::
-
-::: notes
--   And right now I'm the only person working on this
--   I have a masters in Environmental Building Science
-    -   Which is the study of how buildings work
--   which lead me into the energy sector building data science software products
--   In the last few years I've been leading software product development teams in this market
--   And now I'm building ENGI.AI
+-   
 :::
 
 ## Ask {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
--   Energy sector contacts
-    -   Users
-    -   Partners
-    -   People interested in being part of building ENGI.AI
+-   Ticket size
+-   Team
 
 ::: notes
--   And so my ask for you folks is a mention in the right place
--   If over the last few minutes you've joined me in seeing the value of a product like this, keep ENGI.AI in mind when you're talking to people in your networks
--   It's been a fun trip so far, but to make it successful I know I can't do it alone. I need to grow the team as much as the product at this stage, and every contact helps
+-   
 :::
 
 # Contact {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
@@ -446,9 +385,6 @@ Electric Vehicle Charging Control
 
 :::
 
-
-<!-- Add QR code -->
-
 ::: notes
 -   Here's a lot of information on where to find me in one slide.
 :::
@@ -459,3 +395,4 @@ Electric Vehicle Charging Control
 -   [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
 -   [The Data Science Venn Diagram - Drew Conway](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
 -   [UK Data Science Salary - Glassdoor.com](https://www.glassdoor.co.uk/Salaries/uk-data-scientist-salary-SRCH_IL.0,2_IN2_KO3,17.htm?clickSource=searchBtn)
+-   [OFGEM Glossary](https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/000_-_working_paper_-_summer_2019_-_glossary_final.pdf)

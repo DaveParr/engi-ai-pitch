@@ -7,7 +7,7 @@ $font-family-sans-serif: "Montserrat", sans-serif !default;
 
 // colours
 $colour-pink: #E03584;
-$colour-green: #D9E035;
+$colour-green: #d9e035;
 $colour-purple: #7634BF;
 
 $link-color: $colour-green !default;
@@ -15,3 +15,8 @@ $link-color: $colour-green !default;
 // headings
 $presentation-heading-font: "Rubik Mono One" !default;
 $presentation-heading-color: $colour-pink !default;
+
+.reveal .slide blockquote {
+    border-left: 3px solid $colour-green;
+    padding-left: 0.5em;
+  }
