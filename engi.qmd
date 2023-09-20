@@ -12,12 +12,42 @@ format:
         - title-slide.html
 ---
 
-# The Energy Market has a Data Science Problem {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
+
+# The Net Zero companies have a Data Science Problem {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
 
 ::: notes
 > Hi! I'm Dave and I'm here to share my work on ENGI.AI.
 
 -   The energy market has a data science problem.
+:::
+
+## Data is fueling a Clean Tech Boom {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+
+> "The majority of buildings in the UK have a smart meter" - *BEIS*
+
+::: {.r-hstack}
+Reporting
+![](static/icons/noun-reporting-1874010-DF3484.svg){}
+
+Generation
+![](static/icons/noun-energy-house-1364886-DF3484.svg){}
+
+Automation
+![](static/icons/noun-home-automation-5682026-DF3484.svg){}
+
+EV Charging
+![](static/icons/noun-electric-car-2935060-E03584.svg){}
+:::
+
+::: notes
+-   As smart meter uptake increases, so does the amount of data available
+- Energy management and reporting 
+- Home Automation and IoT
+- Electric Vehicle Charging
+- Domestic Solar PV and Battery Storage
+    -   This information is being actively used to achieve Net-Zero by energy management and reporting companies
+    -   Most of the products need some form of forecasting the expected energy demand so that it can be met in the greenest possible way
+    -   This is also true for the people who run the grid.
 :::
 
 ## Demand for skills \> Supply of people {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
@@ -42,7 +72,7 @@ format:
 :::
 
 
-## Forecasting is the goal {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+## Forecasting is foundational {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: {.columns style="display: flex !important; height: 90%;"}
 ::: {.column style="display: flex; justify-content: center; align-items: center;"}
@@ -66,61 +96,67 @@ format:
 -   All of these are reliant on, or can be enhanced by, good forecasting
 :::
 
-## Data is fueling a Clean Tech Boom {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
+## From Network...{background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate=true}
 
-> "The majority of buildings in the UK have a smart meter" - *BEIS*
+:::{}
+Operate and maintain
 
-- Energy management and reporting 
-- Home Automation and IoT
-- Electric Vehicle Charging
-- Domestic Solar PV and Battery Storage
-
-::: notes
--   As smart meter uptake increases, so does the amount of data available
-    -   This information is being actively used to achieve Net-Zero by energy management and reporting companies
-    -   Most of the products need some form of forecasting the expected energy demand so that it can be met in the greenest possible way
-    -   This is also true for the people who run the grid.
-:::
-
-## Network Operators to System Operators {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-
-::: {.columns style="display: flex !important; height: 90%;"}
-::: {.column}
-**DNO**
-
-- Own, operate and maintain the distribution network
-:::
-::: {.column}
-**DSO**
-
-- Monitor, control and actively manage the power flows
-- Enable Distributed Energy Resources on distribution networks
-- Enable customers to be producers, consumers and storers of energy
-:::
+![](static/icons/noun-maintenance-4579165-DF3484.svg){width="600px"}
 :::
 
 ::: notes
 -   OFGEM is pushing for Distribution Network Operators to become Distribution System Operators
-    -   Distribution Network Operators to become Distribution System Operators
-    -   A DSO's responsibility expands on a DNO's
-        -   As a DSO they need to become more actively involved in the operation of the network
-        -   In order to control and actively manage the power flows, they are going to need an accurate forecast of the demand, at a more granular level than they have now
-    -   This is need is also shared by virtual power plant operators
-        -   Who need to be able to forecast the demand of their aggregated assets
+-   Distribution Network Operators are responsible for operation and maintenance of the distribution network
+:::
+
+## ... to System {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate=true}
+
+:::{.r-hstack}
+:::{}
+Operate and maintain
+
+![](static/icons/noun-maintenance-4579165-DF3484.svg){width="40%"}
+:::
+
+
+:::{}
+Active Management
+
+![](static/icons/noun-busy-5596527-DF3484.svg){width="40%"}
+:::
+:::
+
+:::{.r-hstack}
+:::{}
+Distributed Energy Resources
+
+![](static/icons/noun-flash-2697215-DF3484.svg){width="40%"}
+:::
+
+:::{}
+Enable Customers
+
+![](static/icons/noun-development-2434840-E03584.svg){width="40%"}
+:::
+:::
+
+
+::: notes
+-   A DSO's responsibility expands on a DNO's
+    -   As a DSO they need to become more actively involved 
+        - Monitor, control and actively manage the power flows
+        - Enable Distributed Energy Resources on distribution networks
+        - Enable customers to be producers, consumers and storers of energy
+    -   In order to control and actively manage the power flows, they are going to need an accurate forecast of the demand, at a more granular level than they have now
+-   This is need is also shared by virtual power plant operators
+    -   Who need to be able to forecast the demand of their aggregated assets
 :::
 
 
 # ENGI.AI {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
 
 ## Benefits of ENGI.AI {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-
-- Consumption Demand Forecasting for each building
-- No expensive, time consuming survey required
-- Learns from the buildings as they improve
-- Easy to integrate into IoT, SaaS, BMS, and the National Grid
-
-## A good solution {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 ::: columns
 
@@ -167,6 +203,10 @@ No survey required
 :::
 
 ::: notes
+- Consumption Demand Forecasting for each building
+- No expensive, time consuming survey required
+- Learns from the buildings as they improve
+- Easy to integrate into IoT, SaaS, BMS, and the National Grid
 -   Not reliant on surveys
 -   Stays up to date with the buildings changes in construction and operation
 -   Informed by deep domain knowledge
@@ -233,32 +273,20 @@ No survey required
     -   Network mechanisms
 :::
 
-## Foundational to Net Zero Innovation {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate=true auto-animate-easing="ease-in-out"}
+## Platform for Net Zero Innovation {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate=true auto-animate-easing="ease-in-out"}
 
 ::: {.r-hstack}
-::: {}
 Demand Side Response Systems
-
 ![](static/icons/noun-bar-chart-609657-E03584.svg){data-id="bar-chart"}
-:::
 
-::: {}
 Grid Connected Energy Storage
-
 ![](static/icons/noun-charging-5510101-E03584.svg){data-id="charging"}
-:::
 
-::: {}
 Time of Use Flexible Energy Tariffs
-
 ![](static/icons/noun-flexible-time-4720762-E03584.svg){data-id="flexible-time"}
-:::
 
-::: {}
 Electric Vehicle Charging Control
-
 ![](static/icons/noun-electric-car-2935060-E03584.svg){data-id="electric-car"}
-:::
 :::
 
 ::: notes
@@ -321,24 +349,6 @@ Electric Vehicle Charging Control
 :::
 
 
-## Potential Revenue Models {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
-::: columns
-::: {.column}
-
--   Monthly subscription
-    -   Domestic
-    -   Per building
--   Per prediction
-    -   Commercial software
--   Per device license
-    -   IoT
-    -   Edge
-:::
-
-::: {.column}
-![](static/icons/noun-pound-currency-5631043-E03584.svg)
-:::
-:::
 
 ::: notes
 -   Eventually moving into revenue generation there should be various suitable models for pricing. Depending on where and what type of market demand can be captured.
@@ -346,20 +356,16 @@ Electric Vehicle Charging Control
 
 # Where is ENGI.AI now? {background-image="static/images/gradient2-A1aNg8Lg5NTlR0e3.svg"}
 
-## Traction + Status {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+## Progress & Status {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
--   Dec -\> Feb: Tramshed Tech Start Up Academy
--   Mar: Live demo launched using real data and real AI
--   Apr:Building MVP
--   May: Release MVP to selected pre-alpha users
--   Jun -\> Sep: Alpha release to general waitlist
--   Sept -\> Dec: General availability
+![](static/images/timeline.svg)
 
 ::: notes
--   
+-   Starting in 2023, Engi.AI has moved rapidly through a deployed Alpha product and is about to launch for general release
 :::
 
-## Ask {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
+
+## Ask {visibility="hidden" background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg"}
 
 -   Ticket size
 -   Team
@@ -370,17 +376,20 @@ Electric Vehicle Charging Control
 
 # Contact {background-image="static/images/gradient_1-AGBjrE8Wxpc68qqN.svg" auto-animate="true"}
 
-::: columns
-::: {.column width="50%"}
--   [email: dave@engi.ai]()
--   [web: www.engi.ai](https://engi.ai)
--   [LinkedIn: engi-ai](https://www.linkedin.com/company/engi-ai)
--   [Twitter: @engi_ai](https://twitter.com/engi_ai)
--   [This Presentation: engi-ai.github.io/engi-ai-pitch](https://engi-ai.github.io/engi-ai-pitch/)
+::: {.columns style="display: flex !important;"}
+::: {.column style="display: flex; justify-content: center; align-items: center;"}
+- {{< fa globe >}} [engi.ai](https://engi.ai)
 
+- {{< fa envelope >}} [dave@engi.ai](mailto:dave@engi.ai)
+
+- {{< fa brands linkedin >}} [engi-ai](https://www.linkedin.com/company/engi-ai)
+
+- {{< fa brands twitter >}} [@engi_ai](https://twitter.com/engi_ai)
+
+- {{< fa person-chalkboard >}} [engi-ai.github.io/engi-ai-pitch](https://engi-ai.github.io/engi-ai-pitch/)
 :::
 ::: {.column width="50%"}
-![](static/images/qrcode_www.engi.ai.png)
+![](static/icons/qrframe.png)
 :::
 
 :::
@@ -389,7 +398,9 @@ Electric Vehicle Charging Control
 -   Here's a lot of information on where to find me in one slide.
 :::
 
-## Sources
+## Sources + Notes
+
+> Speaker notes can be read by pressing the 's' key.
 
 -   [Data Science Skills in the Energy Sector - Energy Systems Catapult](https://es.catapult.org.uk/report/data-science-skills-in-the-energy-sector-survey-results/)
 -   [Smart Meters in Great Britain - Department for Business, Energy & Industrial Strategy](https://www.gov.uk/government/collections/smart-meters-statistics#2022-quarterly-updates)
